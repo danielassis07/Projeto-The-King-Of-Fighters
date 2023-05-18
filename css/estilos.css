@@ -1,0 +1,112 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: silver;
+  color: black;
+}
+
+header {
+  background-color: transparent;
+  display: -webkit-box;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+header .logo,
+header .imagem-botao {
+  width: 300px;
+  transition: 0.7s ease-in-out;
+}
+
+header #botao-tema-kof {
+  background-color: transparent;
+  border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-kof:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+main {
+  padding: 15px;
+}
+
+main .listagem-kof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+main .cartao-kof {
+  background-color: rgba(183, 234, 139, 0.834);
+  width: 200px;
+  padding: 15px;
+  display: inline;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  transition: 1.2s ease-in-out;
+}
+
+header .cartao-kof:hover {
+  background-color: azure;
+}
+
+main .cartao-kof .informacoes {
+  display: -webkit-inline-flex;
+  justify-content: space-between;
+  border: 3px solid black;
+  border-radius: 2px;
+}
+
+main .cartao-kof .informacoes span {
+  background-color: rgba(32, 86, 235, 0.703);
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  align-items: center;
+}
+
+main .cartao-kof .gif {
+  width: 150px;
+  height: 150px;
+}
+
+main .cartao-kof .quarteto {
+  background-color: white;
+  display: flow-root;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+main .cartao-kof .quarteto {
+  padding: 1px;
+  border-radius: 10px;
+}
+
+main .descricao {
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+body.modo-escuro {
+  background-color: black;
+  color: white;
+}
+
+.modo-escuro .cartao-kof {
+  background-color: rgba(0, 0, 0, 0.894);
+}
+
+.modo-escuro .cartao-kof .quarteto {
+  background-color: rgba(0, 0, 0, 0.894);
+}
